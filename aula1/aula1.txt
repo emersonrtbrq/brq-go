@@ -1,0 +1,119 @@
+1. História
+	- Google
+		- Vários projetos com vários objetivos
+		- Qual a linguagem atende melhor nossos problemas?
+		- C like (Ken Thompson)
+	- Go
+		- Com poucas palavras reservadas
+		- Faclidade de aprendizado
+		- Importa conceitos de programação funcional e alguns aspectos de orientação à objetos (híbrida)
+	
+2. Imprimir valores no console
+	
+	 - fmt.Print(): Imprime valores na mesma linha.
+	 - fmt.Println(): Imprime valores seguidos de uma nova linha.
+	 - fmt.Printf(): Permite formatar a saída com placeholders, como %d para 
+		         inteiros, %s para strings, %v para qualquer valor, entre outros.
+
+3. Tipos básicos
+	
+	- Inteiro: int, int8, int16, int32, int64, uint, uint8, uint16, uint32, 
+	  uint64, uintptr
+	- Floats: float32, float64
+	- Complex Numbers: complex64, complex128
+	- Booleanos: bool 
+	- Strings: sequencia de bytes
+	- Rune: equivalente ao char
+	- Byte
+	- Ponteiros: Referencias de memória de uma variável
+
+3.2 Como criar variáveis?
+	- Declaração explicita de tipo:
+		- Sem atribuição de valor
+			var nomeDaVariável tipo
+		- Com atribuição de valor
+			var nomeDaVariavel tipo = valor
+	- Declarações implícitas de variável
+		var nomeDaVariavel = valor
+		nomeDaVariavel := valor
+
+3.3 Os Zeros dos tipos básicos
+
+	- Inteiros (int, int8, etc.): 0
+	- Flutuantes (float32, float64): 0.0
+	- Booleanos (bool): false
+	- Strings (string): "" (string vazia)
+	- Ponteiros: nil
+
+3.4 Conversão de Tipos Básicos
+	
+	Sintaxe: T(v)
+
+4. Operadores Numéricos
+
+	- Adição (+)
+	- Subtração (-)
+	- Multiplicação (*)																																																																																																													
+	- Divisão (/)
+	- Módulo (%)
+
+5. Operadores de Atribuição 
+
+	- Atribuição simples: =
+	- Atribuição com adição: +=
+	- Atribuição com subtração: -=
+	- Atribuição com multiplicação: *=
+	- Atribuição com divisão: /=
+	- Atribuição com módulo: %=
+
+6. Operadores Relacionais
+
+	- Igual a: ==
+	- Diferente de: !=
+	- Menor que: <
+	- Maior que: >
+	- Menor ou igual a: <=
+	- Maior ou igual a: >=
+
+7. Operadores Lógicos
+
+	- E lógico: &&
+	- Ou lógico: ||
+	- Negação: !	
+
+8.  Ponteiros
+	
+	Ponteiros em Go são usados para armazenar o endereço de memória de uma variável. 
+	Ao invés de armazenar o valor diretamente, um ponteiro aponta para o local onde o valor está armazenado.
+
+	- O operador & é usado para obter o endereço de uma variável.
+	- O operador * é usado para acessar o valor no endereço que o ponteiro está apontando.
+
+Exercícios:
+
+1. Escreva um programa que imprima seu nome, idade e cidade natal usando 
+fmt.Println e fmt.Printf para formatar a saída.
+
+2. Declare variáveis de diferentes tipos: int, float64, bool e string. Atribua valores a elas e imprima-os no console.
+Depois, declare uma variável sem inicializá-la e verifique o valor "zero" padrão que o Go atribui a ela.
+
+3.Inicie um número inteiro e converta-o para ponto flutuante e string, exibindo o valor em cada tipo.
+
+4. Instancie dois números e realize as seguintes operações:
+	- soma
+	- subtração
+	- produto
+	- quociente
+	- resto da divisão (módulo)
+
+5. Inicialize uma variável x com o valor 10 e use os operadores de atribuição (+=, -=, *=, /=, %=) para modificar 
+o valor dela, exibindo o resultado após cada operação.
+
+6. Crie um programa que inicializa dois números inteiros e exiba os resultados das comparações usando os operadores
+relacionais (==, !=, <, >, <=, >=).
+
+7. Escreva um programa que incialize três variáveis booleanas (true ou false) e exiba os resultados das operações lógicas 
+combinadas (&&, ||, !).
+
+8. Crie um programa que declare uma variável inteira e um ponteiro para essa variável. Use o ponteiro para alterar o valor 
+da variável original e imprima o valor antes e depois da alteração.
